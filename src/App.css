@@ -116,6 +116,7 @@ img {
   margin: 0.7rem 0;
 }
 
+
 /* List */
 .list {
   margin: 0.5rem 0;
@@ -296,6 +297,7 @@ img {
 
 .btn:hover {
   opacity: 0.8;
+  color: #fff;
 }
 
 .bg-light,
