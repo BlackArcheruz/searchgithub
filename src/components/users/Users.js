@@ -1,8 +1,11 @@
 import UserItem from './UserItem';
-// import Spinner from '../layout/Spinner';
+import Spinner from '../layout/Spinner';
 import PropTypes from 'prop-types';
 
 const Users =({users, loading})=>{
+  if(loading){
+    return (Spinner)
+  }else{
     return (
       <div style={userStyle}>
           {users.map(user =>(
@@ -10,6 +13,7 @@ const Users =({users, loading})=>{
         ))}
       </div>
     )
+  }
 }
 
 Users.propTypes = {
