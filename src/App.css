@@ -328,13 +328,14 @@ select,
 textarea {
   display: block;
   width: 100%;
-  padding: 0.4rem;
+  padding: 0.5rem;
   font-size: 1.2rem;
   border: 1px solid #ccc;
 }
 
 input[type='submit'],
 button {
+  border-radius: 25px;
   font: inherit;
 }
 
@@ -413,4 +414,13 @@ table th {
     text-align: center;
     justify-content: center;
   }
+}
+.input{
+  background-color: #ccc;
+  border-radius: 25px;
+  outline: none;
+  color: #fff;
+}
+.input::placeholder{
+  color: #fff;
 }

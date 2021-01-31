@@ -1,11 +1,11 @@
 import PropTypes from 'prop-types';
 
 
-const Navbar = props=>{
+const Navbar = ({title, icon})=>{
         return (
             <nav className="navbar bg-primary" style={{boxShadow: '4px 3px 10px #888888'}}>
                 <h1>
-                    <i className={props.icon}></i> {props.title} 
+                    <i className={icon}></i> {title} 
                 </h1>
                 
             </nav>
