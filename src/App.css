@@ -4,7 +4,7 @@
 :root {
   --primary-color: #dc3545;
   --dark-color: #333333;
-  --light-color: #f4f4f4;
+  --light-color: #eeeeee;
   --danger-color: #dc3545;
   --success-color: #28a745;
 }
@@ -244,6 +244,7 @@ img {
   opacity: 0.9;
   background: var(--light-color);
   color: #333;
+  border-radius: 15px;
 }
 
 .btn-primary,
@@ -260,6 +261,8 @@ img {
 .alert-light {
   background: var(--light-color);
   color: #333;
+  animation-name: fadein;
+  animation-duration: .5s;
 }
 
 .btn-dark,
@@ -423,4 +426,64 @@ table th {
 }
 .input::placeholder{
   color: #fff;
+}
+.btn-light:hover{
+  color: #666;
+}
+@keyframes fadein {
+  0%{opacity: 0;}
+  100%{opacity: 0.9;}
+}
+.fa-times {
+  margin-left: 98%;
+  color: #dc3545;
+  cursor: pointer;
+}
+.fa-times:hover{
+  color: #ed1b24;
+  transition: .3s ease color;
+}
+.btn-x{
+  background-color: #eeeeee;
+  padding: 0 0 0 75%;
+}
+@media (max-width: 960px) and (min-width: 700px){
+  .btn-x{
+    padding: 0 0 0 65%;
+  }
+}
+@media (max-width: 700px) and (min-width: 560px){
+  .btn-x{
+    padding: 0 0 0 55%;
+  }
+}
+@media (max-width: 560px) and (min-width: 470px){
+  .btn-x{
+    padding: 0 0 0 45%;
+  }
+}
+@media (max-width: 470px) and (min-width: 415px){
+  .btn-x{
+    padding: 0 0 0 35%;
+  }
+}
+@media (max-width: 415px) and (min-width: 370px){
+  .btn-x{
+    padding: 0 0 0 25%;
+  }
+}
+@media (max-width: 370px) and (min-width: 336px){
+  .btn-x{
+    padding: 0 0 0 15%;
+  }
+}
+@media (max-width: 360px) and (min-width: 310px){
+  .btn-x{
+    padding: 0 0 0 5%;
+  }
+}
+@media (max-width: 310px) and (min-width: 300px){
+  .btn-x{
+    padding: 0 0 0 0;
+  }
 }
