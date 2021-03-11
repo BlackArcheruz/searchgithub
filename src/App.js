@@ -48,10 +48,6 @@ class App extends Component {
     this.setState({alert: {msg, type}})
     setTimeout(()=>this.setState({alert: null}),5000)
   }
-  // Clear Alert
-  onClick = ()=>{
-    this.setState({alert: null})
-}
 
   render(){
     const {users,user,repos,loading} = this.state;
@@ -61,7 +57,7 @@ class App extends Component {
       <div className="App">
         <Navbar/>
         <div className="container">
-          <Alert alert={this.state.alert} onClick={this.onClick}/>
+          <Alert alert={this.state.alert}/>
           <Switch>
             <Route exact path='/'>
             <Search searchUsers={this.searchUsers} 
