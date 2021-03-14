@@ -423,6 +423,7 @@ table th {
   border-radius: 25px;
   outline: none;
   color: #fff;
+  padding: 10px;
 }
 .input::placeholder{
   color: #fff;
