@@ -423,10 +423,10 @@ table th {
   border-radius: 25px;
   outline: none;
   color: #fff;
+  padding: 2rem;
 }
 .input::placeholder{
   color: #fff;
-  margin-left: 1rem;
 }
 .btn-light:hover{
   color: #666;
